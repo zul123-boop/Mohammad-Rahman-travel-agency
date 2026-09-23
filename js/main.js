@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    const loader = document.getElementById('loader');
+    if (loader) {
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                loader.classList.add('hidden');
+            }, 2800);
+        });
+    }
+
     const navbar = document.getElementById('navbar');
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
