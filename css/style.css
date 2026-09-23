@@ -1773,7 +1773,94 @@ section {
         grid-template-columns: 1fr;
     }
 
-    .testimonial-text {
-        font-size: 1.1rem;
+    /* Hajj & Umrah Section */
+.hajj-umrah {
+    background: var(--gray-100);
+}
+
+.hajj-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.hajj-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 35px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.hajj-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.hajj-card.popular {
+    border: 2px solid var(--accent);
+}
+
+.hajj-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+.hajj-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.hajj-price {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.hajj-price .currency {
+    font-size: 1.2rem;
+    vertical-align: super;
+}
+
+.hajj-card ul {
+    margin-bottom: 25px;
+}
+
+.hajj-card ul li {
+    padding: 8px 0;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid var(--gray-200);
+    color: var(--gray-600);
+}
+
+.hajj-card ul li i {
+    color: var(--accent);
+    width: 18px;
+    text-align: center;
+}
+
+.hajj-card .btn {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .hajj-grid {
+        grid-template-columns: 1fr;
     }
 }
